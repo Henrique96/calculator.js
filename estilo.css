@@ -5,23 +5,31 @@ body {
   background-color: lightgray;
 }
 
-#calculadora table {
-  margin: 0 auto;
-  padding: 0;
-  box-sizing: content-box;
+@media only screen and (max-width: 400px) {
+  .container2 {
+    background-color: lightblue;
+    width: 560px;
+  }
+}
+
+.container2 {
+  width: 260px;
   background-color: #CFD8DC; 
+  border: 2px solid black;
+}
+
+#calculadora table {
+  box-sizing: content-box;
   border: 0 double black;
   font-size: 1.5625rem;
 }
 
 #calculadora tr {
   width: 100%;
-  height:100%;
+  height: 100%;
 }
 
 #calculadora tr td input {
-  padding: 8px;
-  margin: 8px;
   width: 100%;
   height:100%;
 }
