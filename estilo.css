@@ -15,10 +15,12 @@ body {
 .container2 {
   width: 260px;
   background-color: #CFD8DC; 
-  border: 2px solid black;
+  border: 8px inset gray;
 }
 
 #calculadora table {
+  margin: 8px;
+  padding: 8px;
   box-sizing: content-box;
   border: 0 double black;
   font-size: 1.5625rem;
