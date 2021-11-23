@@ -18,6 +18,16 @@ body {
   border: 8px inset gray;
 }
 
+.assinatura {
+  margin: 4px 0px 0px 4px;
+  padding: 4px 0px 0px 4px;
+}
+
+.assinatura h2 {
+  color: lightgray;
+  font-size: 10px;
+}
+
 #calculadora table {
   margin: 8px;
   padding: 8px;
