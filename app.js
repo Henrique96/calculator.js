@@ -30,16 +30,24 @@ document.addEventListener("DOMContentLoaded", function () {
     listenerBtn.push(document.getElementById("num8"));
     listenerBtn.push(document.getElementById("num9"));
 
+
+    // Inserir resultado no Armazenamento local 
+    if (window.localStorage.getItem("btnResultado") == undefined) {
+        let btnResultado = [];
+        window.localStorage.setItem("btnResultado", JSON.stringify(btnResultado));
+    }
+
     //Adicionando evento de click
     for (var i = 0; i < listenerBtn.length; i++) {
         listenerBtn[i].addEventListener("click", passarValorTela);
     }
 
+    // Clicando no resultando
     btnResultado.onclick = function () {
-        verificarResulatado();
+        verificarResultado();
     }
 
-    function verificarResulatado() {
+    function verificarResultado() {
         try {
             var aux = tela.value.substring(tela.value.length - 1, tela.value.length);
             if (verificarOperador(aux)) {
@@ -102,5 +110,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 return false;
         }
     }
+
+    console.log(btnResultado)
 
 });
